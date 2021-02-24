@@ -7,6 +7,46 @@
     <title>Calculator Vue.js</title>
 </head>
 <body>
+    <div class="app">
+        <div class="calculator">
+            <div class="calc">
+                {{ calc }}
+            </div>
+            <div class="value">
+                {{ value }}
+            </div>
+
+            <div class="buttons">
+                <div v-for="x in 10" v-on:click="setModifier(x-1)" class="btn">
+                    {{ x-1}}
+                </div>
+
+                <div v-on:click="add()" class="btn">
+                    +
+                </div>
+
+                <div v-on:click="subtract()" class="btn">
+                    -
+                </div>
+
+                <div v-on:click="divide()" class="btn">
+                    /
+                </div>
+
+                <div v-on:click="multiply()" class="btn">
+                    x
+                </div>
+
+                <div v-on:click="calculate()" class="btn">
+                    =
+                </div>
+
+                <div v-on:click="reset()" class="btn">
+                    C
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
