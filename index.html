@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <div class="calculator">
             <div class="calc">
                 {{ calc }}
@@ -19,7 +19,7 @@
 
             <div class="buttons">
                 <div v-for="x in 10" v-on:click="setModifier(x-1)" class="btn">
-                    {{ x-1}}
+                    {{ x-1 }}
                 </div>
 
                 <div v-on:click="add()" class="btn">
@@ -45,9 +45,62 @@
                 <div v-on:click="reset()" class="btn">
                     C
                 </div>
+
             </div>
+
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <script>
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                calc: '',
+                value: null
+            },
+
+            methods: {
+                add () {
+                    this.calc += '+'
+                },
+
+                subtract () {
+                    this.calc += '-'
+                },
+
+                multiply () {
+                    this.calc += '*'
+                },
+
+                divide () {
+                    this.calc += '/'
+                },
+
+                setModifier (x) {
+                    this.calc += x
+                },
+
+                calculate () {
+                    this.value = eval(this.calc)
+                    this.calc = this.value
+                },
+
+                reset() {
+                    this.value = null
+                    this.calc = ''
+                },
+
+                key (e) {
+                    console.log(e.keyCode)
+                }
+
+            }
+
+        })
+
+
+    </script>
     
 </body>
 </html>
