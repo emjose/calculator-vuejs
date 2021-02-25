@@ -25,4 +25,48 @@ body {
   align-items: center;
   font-size: 20px;
   text-align: center;
+  /* z-index: 10; */
+}
+
+.calculator {
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+}
+
+.btn {
+  flex: 0 0 93px;
+  height: 63px;
+  border: 1px solid transparent;
+  line-height: 61px;
+  transform: all 0.8s;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.calc {
+  height: 30px;
+  list-style: 30px;
+}
+
+.value {
+  height: 50px;
+  list-style: 50px;
+  color: white;
+  font-size: 30px;
 }
