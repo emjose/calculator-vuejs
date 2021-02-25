@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap");
+
 *,
 *:before,
 *:after {
@@ -14,7 +16,9 @@ html {
 
 body {
   color: rgba(255, 255, 255, 0.7);
-  font-family: san-serif;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-style: bold;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -23,9 +27,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  /* z-index: 10; */
 }
 
 .calculator {
@@ -33,6 +36,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(87, 88, 99, 0.37);
 }
 
 .buttons {
@@ -53,20 +57,26 @@ body {
 
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
   color: white;
   cursor: pointer;
   transition: all 0.25s;
 }
 
+.btn:active {
+  background-color: #ffbb00a9;
+  transform: translateY(5px);
+}
+
 .calc {
-  height: 30px;
+  height: 50px;
   list-style: 30px;
+  color: rgb(199, 197, 197);
 }
 
 .value {
   height: 50px;
   list-style: 50px;
+  font-weight: 600;
   color: white;
   font-size: 30px;
 }
