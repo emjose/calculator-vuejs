@@ -63,8 +63,8 @@ open index.html
 
 <a href="https://emjose.github.io/calculator-vuejs/">![Live Site](Assets/inter-live-site.png)</a>  
 
-<a href="https://emjose.github.io/calculator-vuejs/">![Under Construction](Assets/019-vuejs.gif)</a>
-
+<a href="https://emjose.github.io/calculator-vuejs/">![Live Site](Assets/019-vuejs.gif)</a>
+<!-- Change alt text to live site -->
 #
 
 <p id="resources"><p>
@@ -84,6 +84,8 @@ open index.html
 - #### [What I learned designing a calculator UI](https://medium.com/@kmerchant/what-i-learned-designing-a-calculator-ui-9358a3112445)
   
 - #### [Calcy | The new-age calculator for 21st-century users](https://uxplanet.org/calcy-the-new-age-calculator-a-design-case-study-11f49559892b)
+
+- #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd) 
 
 #
 
