@@ -6,81 +6,84 @@ font-family: 'Spartan', sans-serif; */
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  position: absolute;
-  background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614230187/100%20Days%20Of%20Code/coffeedesk_elkkzg.jpg")
-    no-repeat center center/cover;
-  width: 100%;
-  height: 100vh;
+	position: absolute;
+	background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614230187/100%20Days%20Of%20Code/coffeedesk_elkkzg.jpg")
+		no-repeat center center/cover;
+	width: 100%;
+	height: 100vh;
 }
 
 body {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+	text-align: center;
+
+	/* overriding user-agent-stylesheet margin of 8px so that github ribbon is flush with edges */
+	margin: 0;
 }
 
 .calculator {
-  width: 320px;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 8px 32px 0 rgba(55, 55, 56, 0.37);
+	width: 320px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 8px 32px 0 rgba(55, 55, 56, 0.37);
 }
 
 .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 280px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 280px;
 }
 
 .btn {
-  flex: 0 0 93px;
-  height: 63px;
-  border: 1px solid transparent;
-  line-height: 61px;
-  transform: all 0.8s;
-  border-radius: 3px;
+	flex: 0 0 93px;
+	height: 63px;
+	border: 1px solid transparent;
+	line-height: 61px;
+	transform: all 0.8s;
+	border-radius: 3px;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: white;
-  cursor: pointer;
-  transition: all 0.25s;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: white;
+	cursor: pointer;
+	transition: all 0.25s;
 }
 
 .btn:active {
-  background-color: #ffa600a9;
-  transform: translateY(5px);
+	background-color: #ffa600a9;
+	transform: translateY(5px);
 }
 
 .calc {
-  height: 50px;
-  list-style: 30px;
-  color: rgb(199, 197, 197);
+	height: 50px;
+	list-style: 30px;
+	color: rgb(199, 197, 197);
 }
 
 .value {
-  height: 50px;
-  list-style: 50px;
-  font-weight: 600;
-  color: white;
-  font-size: 36px;
-  letter-spacing: 1px;
+	height: 50px;
+	list-style: 50px;
+	font-weight: 600;
+	color: white;
+	font-size: 36px;
+	letter-spacing: 1px;
 }
