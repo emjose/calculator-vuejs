@@ -28,6 +28,8 @@
 -   [Resources](#resources)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -40,6 +42,8 @@
 
 -   I also read great blogs about calculator design and calculator UI.
 -   This calculator was made with <a href="https://vuejs.org/">Vue.js</a>. See the <a href="https://github.com/emjose/calculator-react/#header">React</a> and <a href="https://github.com/emjose/calculator-tilt/#header">Vanilla-tilt.js</a> versions.
+
+<br>
 
 #
 
@@ -59,6 +63,8 @@ git clone git@github.com:emjose/calculator-vuejs.git && cd calculator-vuejs
 open index.html
 ```
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -67,7 +73,9 @@ open index.html
 
 <a href="https://emjose.github.io/calculator-vuejs/">![Live Site](Assets/019-vuejs.gif)</a>
 
-<!-- Change alt text to live site -->
+The **[Vue.js Calculator](https://emjose.github.io/calculator-vuejs/)** is keyboard-navigable and is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
+
+<br>
 
 #
 
@@ -89,6 +97,8 @@ open index.html
 -   #### [Calcy | The new-age calculator for 21st-century users](https://uxplanet.org/calcy-the-new-age-calculator-a-design-case-study-11f49559892b)
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 

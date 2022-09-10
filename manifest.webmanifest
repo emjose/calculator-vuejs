@@ -33,7 +33,7 @@
 	"background_color": "#2C292E",
 	"display": "standalone",
 	"lang": "en-US",
-	"id": "emjose.github.io/calculator-vuejs/",
+	"id": "https://emjose.github.io/calculator-vuejs/",
 	"start_url": "/",
 	"scope": "/",
 	"description": "A digital calculator."
