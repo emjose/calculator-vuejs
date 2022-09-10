@@ -3,6 +3,23 @@
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Spartan', sans-serif; */
+
+:root {
+	--white: #fff;
+	--black: #000;
+	--orange: #ffa600a9;
+	--body-color: rgba(255, 255, 255, 0.925);
+	--body-background: #151513;
+	--github-fill: var(--white);
+	--github-color: var(--body-background);
+	--github-focus: #ffa600;
+	--open-sans: "Open Sans", sans-serif;
+	--calculator-background: rgba(255, 255, 255, 0.15);
+	--shadow: 0 8px 32px 0 rgba(55, 55, 56, 0.37);
+	--button-hover: rgba(255, 255, 255, 0.25);
+	--calc-input: rgb(199, 197, 197);
+}
+
 *,
 *:before,
 *:after {
@@ -18,8 +35,8 @@ html {
 }
 
 body {
-	color: rgba(255, 255, 255, 0.7);
-	font-family: "Open Sans", sans-serif;
+	color: var(--body-color);
+	font-family: var(--open-sans);
 	font-weight: 400;
 	font-style: normal;
 	width: 100vw;
@@ -32,17 +49,16 @@ body {
 	align-items: center;
 	font-size: 28px;
 	text-align: center;
-
 	/* overriding user-agent-stylesheet margin of 8px so that github ribbon is flush with edges */
 	margin: 0;
 }
 
 .calculator {
 	width: 320px;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: var(--calculator-background);
 	border-radius: 5px;
 	padding: 20px;
-	box-shadow: 0 8px 32px 0 rgba(55, 55, 56, 0.37);
+	box-shadow: var(--shadow);
 }
 
 .buttons {
@@ -52,6 +68,14 @@ body {
 	width: 280px;
 }
 
+button {
+	background: none;
+	color: var(--body-color);
+	font-size: 28px;
+	font-family: var(--open-sans);
+	font-weight: 400;
+	font-style: normal;
+}
 .btn {
 	flex: 0 0 93px;
 	height: 63px;
@@ -62,30 +86,79 @@ body {
 }
 
 .btn:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-	color: white;
+	background-color: var(--button-hover);
+	color: var(--white);
 	cursor: pointer;
 	transition: all 0.25s;
 }
 
+.btn:focus {
+	background-color: var(--orange);
+	outline: none;
+	border: none;
+}
+
 .btn:active {
-	background-color: #ffa600a9;
+	background-color: var(--orange);
 	transform: translateY(5px);
 }
 
 .calc {
-	height: 50px;
+	height: 60px;
 	list-style: 30px;
-	color: rgb(199, 197, 197);
+	color: var(--calc-input);
 	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .value {
-	height: 50px;
+	height: 70px;
 	list-style: 50px;
 	font-weight: 600;
-	color: white;
+	color: var(--white);
 	font-size: 36px;
 	letter-spacing: 1px;
 	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+.github-corner:focus svg path {
+	fill: var(--github-focus);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:focus .octo-body {
+	fill: var(--github-color);
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
 }
