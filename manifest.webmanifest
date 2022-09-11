@@ -34,7 +34,7 @@
 	"display": "standalone",
 	"lang": "en-US",
 	"id": "https://emjose.github.io/calculator-vuejs/",
-	"start_url": "/",
+	"start_url": "https://emjose.github.io/calculator-vuejs/",
 	"scope": "/",
 	"description": "A digital calculator."
 }
