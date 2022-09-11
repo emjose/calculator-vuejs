@@ -1,5 +1,5 @@
 var CACHE_NAME = "vue-js-calculator-cache-v1";
-var urlsToCache = ["/"];
+var urlsToCache = ["https://emjose.github.io/calculator-vuejs/"];
 
 self.addEventListener("install", function (event) {
 	event.waitUntil(
