@@ -49,7 +49,7 @@ function swRegistration() {
 	if ("serviceWorker" in navigator) {
 		navigator.serviceWorker
 			.register("https://emjose.github.io/calculator-vuejs/sw.js", {
-				scope: "./",
+				scope: "/",
 			})
 			.then(function (registration) {
 				console.log("%c❤️", heart);
